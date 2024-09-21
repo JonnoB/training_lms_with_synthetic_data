@@ -2,6 +2,40 @@
 #python training_script.py cer '{"cer":0.2}' synth_gt/synth200.parquet cer_exp
 #python training_script.py cer '{"cer":0.2}' synth_gt/synth200.parquet cer_exp cer_phi
 #python training_script.py cer '{"cer":0.2}' synth_gt/synth200.parquet cer_test cer_test --model unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+"""
+OCR Text Correction Training and Evaluation Script
+
+This script trains a language model to correct OCR-corrupted text and evaluates its performance.
+
+Usage:
+    python training_script.py <corruption_type> <corruption_args> <dataset> <output> <project_name> [--model MODEL] [--data_obs DATA_OBS]
+
+Arguments:
+    corruption_type (str): Type of corruption to apply (e.g., 'cer', 'cer_wer', 'blend', 'blend_zero', 'compare')
+    corruption_args (str): Arguments for the corruption as a dictionary-like string (e.g., '{"cer":0.2}')
+    dataset (str): Path to the dataset stored as a parquet file
+    output (str): Path to the output folder
+    project_name (str): Name of the project or experiment
+    --model (str): Model to be used for training (default: 'unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit')
+    --data_obs (int): Number of observations to use for training (default: all)
+
+The script performs the following steps:
+1. Loads and corrupts the dataset based on the specified corruption type and arguments
+2. Prepares the dataset for training
+3. Loads and configures the language model
+4. Trains the model using the SFTTrainer
+5. Evaluates the model on a test set
+6. Computes and saves performance metrics (CER, WER, ERP)
+
+Results are saved in the specified output folder and logged to Weights & Biases (wandb).
+
+Requirements:
+- Python 3.x
+- Required libraries: pandas, numpy, torch, transformers, datasets, trl, wandb, evaluate, unsloth
+
+Note: Make sure to have wandb credentials set up before running the script.
+"""
+
 from scrambledtext import (ProbabilityDistributions, CorruptionEngine, modify_and_renormalize_probs)
 
 import pandas as pd
