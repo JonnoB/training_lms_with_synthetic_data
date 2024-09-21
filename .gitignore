@@ -1,0 +1,13 @@
+*.csv
+.netrc
+.env
+env
+*.tar.gz
+*.zip
+/*_exp
+__pycache__
+.triton
+/compare_datasets_data
+/synth_gt
+/saved_tests
+/ncse_hf_dataset
