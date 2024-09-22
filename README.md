@@ -16,6 +16,7 @@ There are several different ways of using this repo, from basic use just to see 
 
 - Make sure you have initialised your weights and biases account in the studio
 - Have a hugging face token ready if you plant to use other models than those provided by Unsloth.
+- The models can be trained on a 24Gb NVIDIA L4 GPU. However, if using the job scripts discussed in the 'Reproducing the work in the paper section' GPU is handled automatically and the studio can simply be started with the free CPU.
 
 ## Basic use
 
