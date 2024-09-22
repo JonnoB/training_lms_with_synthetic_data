@@ -1,7 +1,4 @@
 
-#python training_script.py cer '{"cer":0.2}' synth_gt/synth200.parquet cer_exp
-#python training_script.py cer '{"cer":0.2}' synth_gt/synth200.parquet cer_exp cer_phi
-#python training_script.py cer '{"cer":0.2}' synth_gt/synth200.parquet cer_test cer_test --model unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 """
 OCR Text Correction Training and Evaluation Script
 
@@ -76,6 +73,12 @@ parser.add_argument(
     help='number of observations to use, max is total in dataset, default is all', 
     default= None
 )
+parser.add_argument(
+    '--example', 
+    type=bool, 
+    help='Use the example data as the test set, contains 30 obs only', 
+    default= False
+)
 
 # Parse the arguments
 args = parser.parse_args()
@@ -93,6 +96,8 @@ dataset_path = args.dataset
 
 #all experiments in the project will be saved here
 output_path = args.output
+
+example_mode = args.example
 
 results_folder = os.path.join(output_path, 'results')
 #create the output folder if it doesn't already exist
@@ -338,8 +343,11 @@ print(f"Training complete: {round((time.time() - start)/60)} minutes")
 ##
 ## Load ncse dataset
 ##
-
-data = load_from_disk('ncse_hf_dataset')
+if example_mode:
+    print("Using example dataset corrupted with CER = 0.17 WER = 0.55 and 5 observations")
+    data = load_from_disk('example_hf_dataset')    
+else:
+    data = load_from_disk('ncse_hf_dataset')
 
 #data = data.map(lambda x: cleaning_prompt_formatter(x, 'ocr_text', tokenizer), batched=False)
 

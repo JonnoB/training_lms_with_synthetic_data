@@ -21,8 +21,10 @@ There are several ways of using this repo, from basic use to see how the system 
 ## Basic use
 
 - Open as a studio in lightning
-- run `python training_script.py xxx xxx xxx` to run the example script
-- The output will be saved to the folder xxx
+- run `python training_script.py cer_wer "{'cer': 0.10, 'wer': 0.20}" example_data_df.parquet example example --example True` to run the example script
+- The output will be saved to the folder `example`
+
+This example run will take about 2 minutes to run you can change the parameters as you wish, changing --example to False will run the full test set which takes about 40 minutes so should probably be avoided unless you are sure.
 
 ## Reproducing the work in the paper
 

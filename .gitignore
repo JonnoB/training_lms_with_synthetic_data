@@ -11,3 +11,5 @@ __pycache__
 /synth_gt
 /saved_tests
 /ncse_hf_dataset
+/example
+/wandb

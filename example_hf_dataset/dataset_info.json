@@ -1,0 +1,52 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "sub_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "gt_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "data_type": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "ocr_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "wer_orig": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "cer_orig": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "effective_cer": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "ocr_tokens": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "file_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "__index_level_0__": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
