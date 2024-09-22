@@ -57,7 +57,7 @@ Prepare your custom dataset:
 - Run the training script with custom parameters: `python training_script.py <corruption_type> <corruption_args> <dataset_path> <output_folder> <project_name> --model <model_name> [--data_obs <num_observations>]` See script Docstring/help for detailed instructions.
 - The script will train the model and output the test results in the named output folder
 
-## Data
+# Data
 
 All custom data, such as the original synthetic 19th-century newspaper articles, training and test sets, are available from the data repository at xxx. In addition, this work made use of two high-quality OCR datasets, the [BLN600](https://github.com/Shef-AIRE/llms_post-ocr_correction) and the [overproof](https://dlp2.pdst.ie/) dataset
 
