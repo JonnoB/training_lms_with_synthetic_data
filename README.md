@@ -6,7 +6,11 @@ This repo is designed to be run on the lightning.ai platform and can be opened a
 Other models can be used; however, using Unsloth reduces RAM and increases training time; see the Unsloth documentation for details.
 
 # Key files in the repo
-The most important file in the repo is `training_script.py`. This Python script can be executed from the command line using its arguments to train an LM to perform CLOCR-C using training data and the base LM of your choice.
+
+- `training_script.py`. This Python script can be executed from the command line using its arguments to train an LM to perform CLOCR-C using training data and the base LM of your choice.
+- `learned_corruption_distribs.json`: The conditional probability distributions used to corrupt data.
+- `example_dataset_df.parquet`: parquet file containing a small amount of training data to allow running of the scripts.
+- `/example_hf_dataset`: a folder which can be loaded as a Huggingface dataset. Contains 5 examples and acts as an example test set.
 
 # Using this repo
 
