@@ -5,6 +5,13 @@ The code is related to the [scrambledtext](https://github.com/JonnoB/scrambledte
 This repo is designed to be run on the lightning.ai platform and can be opened as a lightning studio using the button above. The [unsloth.ai](https://github.com/unslothai/unsloth) implementation of Llama3 is used to reduce cost.
 Other models can be used; however, using Unsloth reduces RAM and increases training time; see the Unsloth documentation for details.
 
+# Related repos
+This repo is part of the larger ScrambledText project:
+
+- [scrambledtext](https://github.com/JonnoB/scrambledtext): Library used to create the synthetic data.
+- [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis)](https://github.com/JonnoB/training_lms_with_synthetic_data): Contains code for training the Language Models.
+
+
 # Key files in the repo
 
 - `training_script.py`. This Python script can be executed from the command line using its arguments to train an LM to perform CLOCR-C using training data and the base LM of your choice
