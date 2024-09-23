@@ -9,7 +9,7 @@ Other models can be used; however, using Unsloth reduces RAM and increases train
 This repo is part of the larger ScrambledText project:
 
 - [scrambledtext](https://github.com/JonnoB/scrambledtext): Library used to create the synthetic data.
-- [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis)](https://github.com/JonnoB/training_lms_with_synthetic_data): Contains code for training the Language Models.
+- [scrambledtext_analysis](https://github.com/JonnoB/scrambledtext_analysis): Contains code for training the Language Models.
 
 
 # Key files in the repo
