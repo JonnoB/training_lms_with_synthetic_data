@@ -66,7 +66,7 @@ Prepare your custom dataset:
 
 # Data
 
-All custom data, such as the original synthetic 19th-century newspaper articles, training and test sets, are available from the data repository at xxx. In addition, this work made use of two high-quality OCR datasets, the [BLN600](https://github.com/Shef-AIRE/llms_post-ocr_correction) and the [overproof](https://dlp2.pdst.ie/) dataset.
+All custom data, such as the original synthetic 19th-century newspaper articles, training and test sets, are available from the data repository at [Scrambled text Datasets from the paper](https://doi.org/10.5522/04/27108334.v1). In addition, this work made use of two high-quality OCR datasets, the [BLN600](https://github.com/Shef-AIRE/llms_post-ocr_correction) and the [overproof](https://dlp2.pdst.ie/) dataset (Overproof website has issues).
 
 **NB** The character corruption model is trained on archival newspaper text in English using the file `learned_corruption_distribs.json`. 
 If you wish to use another language/script or domain, please see the `scrambledtext` library for information on creating a new corruption transmission probability dataset.
