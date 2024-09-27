@@ -1,14 +1,19 @@
+<img src="https://github.com/user-attachments/assets/3d1247b3-9090-455f-b85e-1377c6d1c04b" alt="made with unsloth" width="130" align="left"/>
+
+
+
 <a target="_blank" href="https://lightning.ai/ucabbou/studios/scrambledtext">
-  <img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/>
-</a> 
-
-![made with unsloth](https://github.com/user-attachments/assets/3d1247b3-9090-455f-b85e-1377c6d1c04b)
-
-# Training LMs with synthetic data
+  <img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio" align="right"/>
+</a>
+ 
+ 
+<h1 align="center">Training LMs with synthetic data</h1>
 
 This repo contains code for training Language Models (LMs) to perform Context Leveraging OCR Correction (CLOCR-C). 
 The code is related to the [scrambledtext](https://github.com/JonnoB/scrambledtext) repo, as both repos were used in the paper "Scrambled text: training Language Models to correct OCR errors using synthetic data".
-This repo is designed to be run on the lightning.ai platform and can be opened as a lightning studio using the button above. The [unsloth.ai](https://github.com/unslothai/unsloth) implementation of Llama3 is used to reduce cost.
+This repo is designed to be run on the lightning.ai platform. **To launch this repo as a lightning studio click the lightning button in the top right**. 
+
+The default model in the studio is Llama3.1, althought this can be changed. The [unsloth.ai](https://github.com/unslothai/unsloth) implementation of Llama is used.
 Other models can be used; however, using Unsloth reduces RAM and increases training time; see the Unsloth documentation for details.
 
 # Related repos
