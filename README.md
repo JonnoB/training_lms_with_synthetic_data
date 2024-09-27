@@ -1,3 +1,7 @@
+<a target="_blank" href="https://lightning.ai/ucabbou/studios/scrambledtext">
+  <img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/>
+</a> ![made with unsloth](https://github.com/user-attachments/assets/3d1247b3-9090-455f-b85e-1377c6d1c04b)
+
 # Training LMs with synthetic data
 
 This repo contains code for training Language Models (LMs) to perform Context Leveraging OCR Correction (CLOCR-C). 
