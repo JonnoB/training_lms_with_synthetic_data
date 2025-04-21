@@ -10,7 +10,7 @@
 <h1 align="center">Training LMs with synthetic data</h1>
 
 This repo contains code for training Language Models (LMs) to perform Context Leveraging OCR Correction (CLOCR-C). 
-The code is related to the [scrambledtext](https://github.com/JonnoB/scrambledtext) repo, as both repos were used in the paper "[Scrambled text: training Language Models to correct OCR errors using synthetic data](https://arxiv.org/abs/2409.19735)".
+The code is related to the [scrambledtext](https://github.com/JonnoB/scrambledtext) repo, as both repos were used in the paper "[Scrambled text: training Language Models to correct OCR errors using synthetic data](https://doi.org/10.1007/s10032-025-00522-0)".
 This repo is designed to be run on the lightning.ai platform. **To launch this repo as a lightning studio click the lightning button in the top right**. 
 
 The default model in the studio is Llama3.1, althought this can be changed. The [unsloth.ai](https://github.com/unslothai/unsloth) implementation of Llama is used.
@@ -84,6 +84,6 @@ If you wish to use another language/script or domain, please see the `scrambledt
 
 # Citing this repo
 
-If this repo is helpful in your work, please cite the Arxiv pre-print
+If this repo is helpful in your work, please cite the article published in the International Journal on Document Analysis and Recognition (IJDAR).
 
-Scrambled text: training Language Models to correct OCR errors using synthetic data: https://arxiv.org/abs/2409.19735
+Scrambled text: training Language Models to correct OCR errors using synthetic data: https://doi.org/10.1007/s10032-025-00522-0
